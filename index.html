@@ -1,49 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Resume</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <!-- Personal Information Section -->
-    <section class="personal-info">
-      <img src="pic.jpg" alt="Profile Picture" class="profile-pic">
-      <h1>Amjad Afzal Ahmed</h1>
-      <p>Contact: example@email.com</p>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume-Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-side">
+        <div class="profile-pic">
+          <img src="./pic.jpg" alt="" />
+        </div>
+        <span id="intro">Hello I am ...</span>
+        <div class="title">
+          <h1>Amjad Afzal Ahmed</h1>
+          <p>Full Stack Developer</p>
+        </div>
+        <div class="contact-details">
+          <div class="contact">
+            <i class="bx bxs-contact"></i>
+            <h1>CONTACT</h1>
+          </div>
+          <div class="details">
+            <p>
+              <i class="bx bx-mobile"></i>
+              +92-315-240-7725
+            </p>
+            <p>
+              <i class="bx bx-envelope"></i>
+              abhutto2006@gmail.com
+            </p>
+            <p>
+              <i class="bx bx-location-plus"></i>
+              Distt. Malir Karachi, Sindh Pakistan
+            </p>
+            <p>
+              <i class="bx bx-globe"></i>
+              www.mywebsite.com
+            </p>
+          </div>
+        </div>
+        <div class="hobbies-details">
+          <div class="hobbies">
+            <img src="./hobbies.png" alt="" />
+            <h1>HOBBIES</h1>
+          </div>
+          <div class="hobbies-content">
+            <p>Studying latest tech materials</p>
+            <p>Surfing the web</p>
+            <p>Exploring new techniques of modern web</p>
+            <p>Exploring new techniques of modern web</p>
+          </div>
+        </div>
+      </div>
 
-    
-    <section class="education">
-      <h2>Education</h2>
-      <p>B.A Hons from etc. University</p>
-      <p>IT Courses from etc. Institute</p>
-    </section>
+      <!-- Left Section Ends Here -->
 
-    
-    <section id="skills-section" class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>TypeScript</li>
-        <li>HTML & CSS</li>
-        <li>React & Next.js</li>
-        <li>Tailwind CSS</li>
-      </ul>
-    </section>
+      <!-- Right Section Starts Here -->
 
-    
-    <section class="work-experience">
-      <h2>Work Experience</h2>
-      <p>HR & Admin Officer at etc. Company (2007-Present)</p>
-      <p>Software Developer at etc. Company (2023-Present)</p>
-    </section>
+      <div class="right-side">
+        <div class="education">
+          <div class="edu">
+            <p id="title-tag">EDUCATION</p>
+            <div class="edu-data">
+              <div class="left">
+                <p id="data-left">Year-- 2000-03</p>
+                <p id="data-left">Year-- 2022-23</p>
+                <p id="data-left">Year-- 2023-24</p>
+              </div>
+              <div id="center"></div>
+              <div class="right">
+                <h2 id="inst">University of Sindh</h2>
+                <p id="data-right">B.A Hons. (I.R)</p>
+                <h2 id="inst">Digiskills / VU</h2>
+                <p id="data-right">Graphic Design</p>
+                <h2 id="inst">Governor Initiative</h2>
+                <p id="data-right">Web Developer</p>
+              </div>
+            </div>
+            <span id="edu-icon">
+              <i class="bx bxs-graduation"></i>
+            </span>
+          </div>
+        </div>
 
-    
-    <button id="toggle-btn">Toggle Skills</button>
-  </div>
+        <div class="experience">
+          <div class="exp">
+            <p id="title-tag">EXPERIENCE</p>
+            <div class="exp-data">
+              <div class="left">
+                <p id="data-left">Year-- 2003-05</p>
+                <p id="data-left">Year-- 2005-07</p>
+                <p id="data-left">Year-- 2007-24</p>
+              </div>
+              <div id="center"></div>
+              <div class="right">
+                <h2 id="comp">Feroze Textile Industries</h2>
+                <p id="data-right">HR Executive</p>
+                <h2 id="comp">Alvia Promotions</h2>
+                <p id="data-right">Floor Manager</p>
+                <h2 id="comp">Pakistan Steel Mills</h2>
+                <p id="data-right">P.R.O / Admin Officer</p>
+              </div>
+              
+            </div>
+            <span id="exp-icon">
+              <img src="experience.png" alt="">
+            </span>
+          </div>
+        </div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="skills">
+          <div class="skill">
+            <p id="title-tag">SKILLS</p>
+            <div class="skill-data">
+              <div class="left">
+                <p id="data-left">Graphic Designing</p>
+                <p id="data-left">Typescript / Python</p>
+                <p id="data-left">React / Next Js</p>
+              </div>
+              <div id="center"></div>
+              <div class="right">
+                <p id="data-right">Video Editing</p>
+                <p id="data-right">HTML / CSS</p>
+                <p id="data-right">Tailwind CSS</p>
+              </div>
+            </div>
+            <span id="skill-icon">
+              <i class="bx bxs-graduation"></i>
+            </span>
+          </div>
+
+          <button id="toggler">Toggle</button>
+        </div>
+
+        <script src="app.js"></script>
+      </div>
+    </div>
+  </body>
 </html>
